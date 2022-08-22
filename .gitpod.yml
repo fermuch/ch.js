@@ -6,4 +6,4 @@ tasks:
     command: cd clickhouse && /usr/bin/clickhouse-server
   - name: Test ch.js
     init: bun install
-    command: bun wiptest
+    command: bun test
