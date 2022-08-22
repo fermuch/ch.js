@@ -1,0 +1,7 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Test ch.js
+    init: bun install
+    command: bun wiptest
