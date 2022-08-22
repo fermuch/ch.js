@@ -2,6 +2,8 @@ image:
   file: .gitpod.Dockerfile
 
 tasks:
+  - name: Run clickhouse
+    command: cd clickhouse && /usr/bin/clickhouse-server
   - name: Test ch.js
     init: bun install
     command: bun wiptest
