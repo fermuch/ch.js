@@ -7,3 +7,14 @@ tasks:
   - name: Test ch.js
     init: bun install
     command: bun test
+
+ports:
+  - name: Clickhouse 8123
+    port: 8123
+    onOpen: ignore
+  - name: Clickhouse 9000
+    port: 9000
+    onOpen: ignore
+  - name: Clickhouse 9004
+    port: 9004
+    onOpen: ignore
